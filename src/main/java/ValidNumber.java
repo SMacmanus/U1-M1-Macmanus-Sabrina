@@ -22,11 +22,12 @@ public class ValidNumber {
         input = userInput.nextDouble();
 
         if((input < 1) || (input > 10)) {
+
             do {
                 System.out.println("You must enter a number between 1 and 10, please try again.");
                 tryAgain = userInput.nextDouble();
             } while ((tryAgain < 1) || (tryAgain > 10));
-            System.out.println(tryAgain);
+            System.out.println(tryAgain + " is a valid number. Thank you.");
         } else {
             System.out.println(input + " is a valid number between 1 and 10");
         }

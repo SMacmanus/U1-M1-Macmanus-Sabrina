@@ -11,13 +11,15 @@ public class ArrayFunReverseIt {
     public static void main(String[] args){
 
     int[] forwardArr = {1,2,3,4,5};
-
     System.out.println(Arrays.toString(forwardArr));
-
     int[] backwardArr = new int[forwardArr.length];
-    for(int i = 0; i < backwardArr.length; i++) {
-
+    int j = (forwardArr.length - 1);
+    for(int i = 0; i < forwardArr.length; i++) {
+        backwardArr[i] = forwardArr[j];
+        j--;
     }
+
+    System.out.println(Arrays.toString(backwardArr));
 
 
 

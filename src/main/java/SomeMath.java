@@ -4,7 +4,8 @@ public class SomeMath {
 
     public static int total5(int a, int b, int c, int d, int e){
         int sum = a+b+c+d+e;
-        System.out.println("The sum of total5 is " + sum + " .");
+        System.out.println("The sum " +
+                "of total5 is " + sum + " .");
         return sum;
     }
 
